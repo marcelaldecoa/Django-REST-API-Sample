@@ -18,6 +18,7 @@ from django.conf.urls import include
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('profiles_api.urls'))
 ]
